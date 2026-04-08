@@ -1,0 +1,84 @@
+:root {
+  --bg: #0b0c10;
+  --panel: rgba(255, 255, 255, 0.06);
+  --panel-2: rgba(255, 255, 255, 0.08);
+  --border: rgba(255, 255, 255, 0.12);
+  --text: rgba(255, 255, 255, 0.78);
+  --text-2: rgba(255, 255, 255, 0.6);
+  --text-h: rgba(255, 255, 255, 0.92);
+  --accent: #a78bfa;
+  --accent-2: #22d3ee;
+  --accent-3: #fb7185;
+  --accent-4: #a3e635;
+  --accent-5: #fbbf24;
+  --shadow: rgba(0, 0, 0, 0.4) 0 18px 40px -18px;
+
+  --font-body: Inter, system-ui, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Space Grotesk", Inter, system-ui, "Segoe UI", Roboto, sans-serif;
+  --font-serif: Fraunces, ui-serif, Georgia, serif;
+  --mono: ui-monospace, Consolas, "SFMono-Regular", Menlo, monospace;
+
+  color-scheme: dark;
+  font: 16px/1.5 var(--font-body);
+  letter-spacing: 0.2px;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html[data-theme='light'] {
+  --bg: #fbfbff;
+  --panel: rgba(0, 0, 0, 0.04);
+  --panel-2: rgba(0, 0, 0, 0.06);
+  --border: rgba(0, 0, 0, 0.1);
+  --text: rgba(10, 10, 16, 0.78);
+  --text-2: rgba(10, 10, 16, 0.6);
+  --text-h: rgba(10, 10, 16, 0.92);
+  --accent: #6d28d9;
+  --accent-2: #0891b2;
+  --accent-3: #db2777;
+  --accent-4: #16a34a;
+  --accent-5: #d97706;
+  --shadow: rgba(0, 0, 0, 0.12) 0 18px 40px -18px;
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(1200px 600px at 12% 8%, color-mix(in oklab, var(--accent), transparent 75%), transparent 60%),
+    radial-gradient(1000px 600px at 86% 12%, color-mix(in oklab, var(--accent-2), transparent 80%), transparent 55%),
+    radial-gradient(900px 700px at 52% 92%, color-mix(in oklab, var(--accent-3), transparent 86%), transparent 55%),
+    radial-gradient(900px 700px at 90% 78%, color-mix(in oklab, var(--accent-4), transparent 90%), transparent 52%),
+    radial-gradient(1000px 700px at 10% 82%, color-mix(in oklab, var(--accent-5), transparent 92%), transparent 52%),
+    var(--bg);
+  color: var(--text);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100%;
+}

@@ -1,0 +1,24 @@
+import { type ReactNode } from 'react'
+
+export function Section({
+  id,
+  eyebrow,
+  title,
+  children,
+}: {
+  id: string
+  eyebrow: string
+  title: string
+  children: ReactNode
+}) {
+  return (
+    <section id={id} className="section">
+      <div className="sectionHead">
+        <div className="eyebrow">{eyebrow}</div>
+        <h2 className="sectionTitle">{title}</h2>
+      </div>
+      {children}
+    </section>
+  )
+}
+
